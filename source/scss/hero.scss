@@ -1,0 +1,37 @@
+.hero {
+  background: url(../images/creative-header-slide-1.jpg) no-repeat;
+
+  color: #ffffff;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+}
+.hero_logo{
+  position: relative;
+  top:35px;
+  left:1.82%;
+  max-width:78px;
+  max-height: 48px;
+
+  @media(max-width:600px){
+    top:25px;
+  }
+
+}
+.hero_logo_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero_name{
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (200 - 24) + 24px);
+  font-family: Poppins-Bold;
+  line-height: 1;
+}
+.hero_title{
+ font-family: Poppins-Regular;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (36 - 10) + 10px);
+  margin: 1.56% 0;
+  line-height: 1;
+}
