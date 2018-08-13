@@ -1,0 +1,36 @@
+.hero_nav{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(41, 43, 50, 0.9);
+  display: none;
+
+  &_list{
+    margin: auto;
+    padding-top:10% ;
+  }
+
+  &_item{
+    font-family: Poppins-SemiBold;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+
+    &:hover{
+
+    }
+    &:active{
+      color:#7443ff;
+
+    }
+  }
+  .hero_nav_close{
+    color: #ffffff;
+    top:4.83%;
+    right:2.8%;
+    position: absolute;
+    font-size: 25px;
+  }
+}

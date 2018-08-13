@@ -2698,6 +2698,10 @@ th {
   font-family: Poppins-SemiBold;
   src: url(../fonts/Poppins-SemiBold.otf); }
 
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url(../fonts/MyriadPro-Regular.otf); }
+
 body {
   font-size: 16px; }
 
@@ -2716,6 +2720,9 @@ h1 {
   text-align: center;
   position: relative;
   padding: 20% 0; }
+
+button {
+  padding: 0; }
 
 .button {
   display: inline-block;
@@ -2736,13 +2743,22 @@ h1 {
   border: 1px solid #2a2d2e;
   padding: 20px 40px;
   font-weight: bold; }
+  @media (max-width: 1100px) {
+    .button_black {
+      padding: 10px 20px;
+      margin-bottom: 2%; } }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 .hero {
   background: url(../images/creative-header-slide-1.jpg) no-repeat;
   color: #ffffff;
   background-size: cover;
   width: 100%;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
 .hero_logo {
   position: relative;
@@ -2770,6 +2786,72 @@ h1 {
   margin: 1.56% 0;
   line-height: 1; }
 
+.hero_icon {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  bottom: 5%;
+  right: 50%;
+  margin-top: -3px;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transform: rotate(45deg) translateY(-50%); }
+  @media (max-width: 1000px) {
+    .hero_icon {
+      width: 10px;
+      height: 10px;
+      bottom: 4%; } }
+  @media (max-width: 480px) {
+    .hero_icon {
+      border-bottom: 2px solid #ffffff;
+      border-right: 2px solid #ffffff; } }
+
+.hero_menu {
+  position: relative;
+  right: 2.60%;
+  top: 50px;
+  max-width: 40px;
+  max-height: 30px;
+  font-size: 200%; }
+  @media (max-width: 1440px) {
+    .hero_menu {
+      top: 40px;
+      font-size: 180%; } }
+  @media (max-width: 1200px) {
+    .hero_menu {
+      top: 30px;
+      font-size: 150%; } }
+  @media (max-width: 800px) {
+    .hero_menu {
+      top: 20px;
+      font-size: 100%; } }
+
+.hero_nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(41, 43, 50, 0.9);
+  display: none; }
+  .hero_nav_list {
+    margin: auto;
+    padding-top: 10%; }
+  .hero_nav_item {
+    font-family: Poppins-SemiBold;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center; }
+    .hero_nav_item:active {
+      color: #7443ff; }
+  .hero_nav .hero_nav_close {
+    color: #ffffff;
+    top: 4.83%;
+    right: 2.8%;
+    position: absolute;
+    font-size: 25px; }
+
 .Lets_make_item {
   padding-left: 7.8%;
   padding-top: 7.8%;
@@ -2784,53 +2866,80 @@ h1 {
     padding-right: 7.8%;
     display: flex;
     flex-direction: row-reverse;
-    text-align: left;
-    justify-content: space-between; }
+    text-align: left; }
+    .Lets_make_item:nth-child(2n) .Lets_make_text {
+      max-width: 30%;
+      box-sizing: border-box;
+      vertical-align: top;
+      padding-left: 3%; }
+      @media (max-width: 1050px) {
+        .Lets_make_item:nth-child(2n) .Lets_make_text {
+          max-width: 100%;
+          padding: 0 2%; } }
+    @media (max-width: 1050px) {
+      .Lets_make_item:nth-child(2n) {
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0; } }
+  @media (max-width: 1050px) {
+    .Lets_make_item {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 0; } }
 
 .Lets_make_image {
   position: relative;
   max-width: 1144px;
   max-height: 650px; }
-  .Lets_make_image_reitive {
+  .Lets_make_image .image {
     position: absolute;
-    display: flex;
-    left: 450px;
-    top: 250px;
+    left: 58.9%;
+    bottom: 0;
+    width: 14.597%;
+    height: 41.692%; }
+  .Lets_make_image .image_rotate {
+    width: 100%;
+    height: auto; }
+  .Lets_make_image .rotate {
+    position: absolute;
     transform: rotate(270deg);
-    align-items: center; }
-    .Lets_make_image_reitive .rotate {
-      font-family: Poppins-SemiBold;
-      font-size: 100.45px;
-      color: #ffffff; }
+    width: 42.22%;
+    height: 14.597%;
+    left: 44%;
+    top: 24%;
+    text-align: center;
+    line-height: 1;
+    font-family: Poppins-SemiBold;
+    font-size: calc( (100vw - 320px)/(1920 - 320) * (100.45 - 27) + 27px);
+    color: #ffffff; }
   .Lets_make_image_decorative_square {
-    width: 100px;
-    height: 100px;
+    width: 8.74%;
+    height: 15.38%;
     position: absolute;
-    background-color: #ffffff;
-    display: flex; }
+    background-color: #ffffff; }
   .Lets_make_image .square_1 {
     right: 0;
     bottom: 0; }
   .Lets_make_image .square_2 {
-    right: 100px;
-    bottom: 100px; }
+    right: 8.74%;
+    bottom: 15.38%; }
   .Lets_make_image_decorative_gradient {
     position: absolute;
     background: #adecea;
-    background: -moz-linear-gradient(top, #adecea 0%, #f8d8e3 99%, #207cca 100%, #7db9e8 100%);
-    background: -webkit-linear-gradient(top, #adecea 0%, #f8d8e3 99%, #207cca 100%, #7db9e8 100%);
-    background: linear-gradient(to bottom, #adecea 0%, #f8d8e3 99%, #207cca 100%, #7db9e8 100%);
+    background: -moz-linear-gradient(top, #adecea 0%, #f8d8e3 99%);
+    background: -webkit-linear-gradient(top, #adecea 0%, #f8d8e3 99%);
+    background: linear-gradient(to bottom, #adecea 0%, #f8d8e3 99%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adecea', endColorstr='#7db9e8',GradientType=0 ); }
   .Lets_make_image .gradient_1 {
-    width: 190px;
-    height: 105px;
+    width: 16.6%;
+    height: 16.15%;
     right: 0;
-    bottom: 400px; }
+    bottom: 61.538%; }
   .Lets_make_image .gradient_2 {
-    width: 95px;
-    height: 55px;
-    right: 190px;
-    bottom: 350px; }
+    width: 8.3%;
+    height: 8.46%;
+    right: 16.6%;
+    bottom: 53%; }
 
 .Lets_make_picture {
   display: block;
@@ -2841,13 +2950,117 @@ h1 {
   max-width: 30%;
   box-sizing: border-box;
   vertical-align: top; }
+  @media (max-width: 992px) {
+    .Lets_make_text {
+      max-width: 100%; } }
 
 .Lets_make_title {
   font-family: Poppins-SemiBold;
-  font-size: calc( (100vw - 320px)/(1920 - 320) * (80 - 8) + 8px);
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (80 - 14) + 14px);
   line-height: 1.2; }
 
 .Lets_make_description {
   font-family: Poppins-Regular;
-  font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 8) + 8px);
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 12) + 12px);
   margin: 5% 0; }
+  @media (max-width: 992px) {
+    .Lets_make_description {
+      margin: 1% 0; } }
+
+.Lets_make_description_text {
+  font-family: MyriadPro-Regular;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (14 - 10) + 10px);
+  color: #72787a;
+  margin-bottom: 7%; }
+  @media (max-width: 992px) {
+    .Lets_make_description_text {
+      margin-bottom: 2%; } }
+
+.Lets_make .play {
+  width: 7.255%;
+  height: 12.769%;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 64.16%;
+  bottom: 9.23%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .Lets_make .play .video_decorative_picture {
+    width: 15.73%;
+    height: 23.595%; }
+
+.Lets_make .video_text {
+  position: absolute;
+  transform: rotate(270deg);
+  width: 24.038%;
+  height: 15.384%;
+  left: 55%;
+  top: 33%;
+  text-align: center;
+  line-height: 1;
+  font-family: Poppins-SemiBold;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (100.45 - 27) + 27px);
+  color: #ffffff; }
+
+.Lets_make .video_decorative_elem_purple {
+  width: 8.74%;
+  height: 15.38%;
+  position: absolute;
+  background-color: #7443ff;
+  right: 0;
+  bottom: 0; }
+
+.Lets_make .video_decorative_image {
+  position: absolute;
+  width: 7.779%;
+  height: 13.692%;
+  right: 2.185%;
+  bottom: 3.846%;
+  z-index: 2; }
+  .Lets_make .video_decorative_image .video_decorative_picture {
+    width: 100%;
+    height: auto; }
+
+.Lets_make .video_decorative_elem_empty {
+  width: 6.118%;
+  height: 10.769%;
+  border: 2px solid #ffffff;
+  right: 10.49%;
+  bottom: 18%;
+  position: absolute; }
+
+.Lets_make .video_decorative_elem_gradient_1 {
+  position: absolute;
+  width: 15.734%;
+  height: 16.923%;
+  right: 0;
+  top: 20.769%;
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #b7e9e9 0%, #f7d8e4 100%, #207cca 100%, #f7d8e4 100%, #f6d8e4 101%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e5799 0%, #b7e9e9 0%, #f7d8e4 100%, #207cca 100%, #f7d8e4 100%, #f6d8e4 101%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e5799 0%, #b7e9e9 0%, #f7d8e4 100%, #207cca 100%, #f7d8e4 100%, #f6d8e4 101%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#f6d8e4',GradientType=1 );
+  /* IE6-9 */ }
+
+.Lets_make .video_decorative_elem_gradient_2 {
+  position: absolute;
+  width: 5.68%;
+  height: 8.46%;
+  right: 16.60%;
+  top: 37.692%;
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #b7e9e9 0%, #f7d8e4 100%, #207cca 100%, #f7d8e4 100%, #f6d8e4 101%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e5799 0%, #b7e9e9 0%, #f7d8e4 100%, #207cca 100%, #f7d8e4 100%, #f6d8e4 101%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e5799 0%, #b7e9e9 0%, #f7d8e4 100%, #207cca 100%, #f7d8e4 100%, #f6d8e4 101%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#f6d8e4',GradientType=1 );
+  /* IE6-9 */ }
