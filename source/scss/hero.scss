@@ -6,6 +6,12 @@
   width: 100%;
   display: flex;
   position: relative;
+
+  .container{
+    padding: 20% 0;
+    margin: auto;
+
+  }
 }
 .hero_logo{
   position: relative;
@@ -68,6 +74,7 @@
   max-width: 40px;
   max-height: 30px;
   font-size: 200%;
+  color: #ffffff;
 
 
 
