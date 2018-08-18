@@ -36,9 +36,6 @@
         flex-direction: column;
         text-align: center;
         padding-right:0;
-
-
-
       }
 
     }
@@ -47,6 +44,7 @@
       flex-direction: column;
       text-align: center;
       padding-left: 0;
+      padding-top: 5%;
     }
 
   }
@@ -126,18 +124,12 @@
       right:16.6%;
       bottom:53%;
     }
-
-
-
-
   }
 
   &_picture{
     display: block;
     width: 100%;
     height: auto;
-
-
   }
 
 
@@ -162,8 +154,8 @@
     font-size:calc( (100vw - 320px)/(1920 - 320) * (18 - 12) + 12px);
     margin: 5% 0;
 
-    @media (max-width: 992px) {
-     margin: 1% 0;
+    @media (max-width: 1050px) {
+     margin: 2% 0;
     }
   }
 
@@ -174,7 +166,7 @@
     margin-bottom: 7%;
 
 
-    @media (max-width: 992px) {
+    @media (max-width: 1050px) {
       margin-bottom: 2%;
     }
 

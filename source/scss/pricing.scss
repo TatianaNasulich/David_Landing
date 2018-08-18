@@ -1,0 +1,78 @@
+.pricing_table{
+  background: url(../images/background.png) no-repeat;
+  color: #ffffff;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+
+  &_title{
+    font-family: Poppins-SemiBold;
+    font-size:  calc( (100vw - 320px)/(1920 - 320) * (80 - 40) + 40px);
+    line-height: 100px;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 9.2%;
+  }
+
+  &_description{
+    font-family:Poppins-Light ;
+    font-size:  calc( (100vw - 320px)/(1920 - 320) * (18 - 14) + 14px);
+    line-height: 30px;
+    vertical-align: center;
+    text-align: center;
+  }
+
+  &_list{
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.55% 0 11.11%;
+    width: 100%;
+
+
+
+    @media(max-width: 650px) {
+      display: block;
+    }
+  }
+  &_item{
+    max-width: 400px;
+    width: 100%;
+
+    @media(max-width: 650px) {
+      width: 100%;
+      margin: auto  auto 5% auto ;
+    }
+  }
+
+  &_item_title{
+    font-size:calc( (100vw - 320px)/(1920 - 320) * (24 - 20) + 20px);
+    font-family: Poppins-SemiBold;
+    line-height: 100px;
+
+  }
+  &_item_list{
+    font-size: calc((100vw - 320px)/(1920 - 320) * (14 - 12) + 12px);
+    line-height: 30px;
+    font-family: Poppins-Light;
+    margin-bottom:35px;
+  }
+
+}
+.pricing_table_item_image{
+  width: 32%;
+  height: auto;
+  margin: auto;
+}
+.pricing_table_item_picture{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.pricing_table_image_active{
+  padding: 1.979%;
+  border:1px solid #ffffff;
+  border-radius: 50%;
+}

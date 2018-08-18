@@ -10,27 +10,61 @@
   &_list{
     margin: auto;
     padding-top:10% ;
+
+    @media(max-width:992px){
+      padding-top:8%
+    }
+    @media(max-width:600px){
+      padding-top:3%
+    }
   }
 
   &_item{
+   width: 12.5%;
     font-family: Poppins-SemiBold;
-    font-size: 60px;
-    line-height: 100px;
+    font-size: calc( (100vw - 320px)/(1920 - 320) * (60 - 16) + 16px);
+    line-height: 1.6;
     text-align: center;
+    color: #ffffff;
+    margin: auto;
+    @media(max-width:800px){
+      width: 15%;
+    }
+    @media(max-width:800px){
+      width: 20%;
+    }
+    @media(max-width:400px){
+      width: 25%;
+    }
 
+  }
+  &_link{
+    color: #ffffff;
     &:hover{
-
+      color:#7443ff;
     }
     &:active{
-      color:#7443ff;
 
     }
+  }
+
+  &_item_icon{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+
+  }
+
+  &_icon{
+    font-size: calc( (100vw - 320px)/(1920 - 320) * (32 - 16) + 16px);
   }
   .hero_nav_close{
     color: #ffffff;
     top:4.83%;
     right:2.8%;
     position: absolute;
-    font-size: 25px;
+    font-size: calc( (100vw - 320px)/(1920 - 320) * (25 - 16) + 16px);
+    cursor: pointer;
   }
 }

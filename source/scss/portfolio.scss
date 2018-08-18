@@ -1,4 +1,10 @@
 .portfolio{
+
+  .container{
+    @media (max-width: 1620px) {
+      width: 90%;
+    }
+  }
   &_nav{
     padding: 6.173% 0 2.778%;
   }
@@ -28,6 +34,10 @@
     font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 14) + 14px);
     line-height: 100px;
     font-family:MyriadPro-Regular ;
+
+    @media(max-width:1000px){
+      line-height: 60px;
+    }
   }
 
   &_icon{
@@ -39,9 +49,14 @@
 
   &_link{
     color: black;
+    cursor: pointer;
 
     &:hover{
       border-bottom: 2px solid #7443ff;
+    }
+
+    &:active{
+      font-weight: bold;
     }
 
   }
@@ -78,6 +93,7 @@
 
 .portfolio_image_wrapper_padding{
   padding-right: 1.49%;
+
 }
 
 .portfolio_image_wrapper_block{
@@ -89,10 +105,12 @@
   bottom: 0;
 
   @media(max-width:500px){
-    position: static;
+    @media(max-width:500px){
+      position: static;
+    }
+
   }
 }
-
 
 .portfolio_image_picture{
   width: 100%;
@@ -101,8 +119,9 @@
 }
 
 .portfolio_image_bottom_indent{
+
   @media(max-width:500px){
-    padding-bottom: 1.49%;
+    padding-bottom: 1.5%;
   }
 
 }
@@ -118,16 +137,23 @@
     }
     & :nth-child(2) {
       order: 3;
+
     }
     & :nth-child(3) {
       order: 2;
+
+      & :nth-child(2){
+        & :nth-child(1){
+         margin-top: 6%;
+        }
+      }
     }
 
   }
 
 }
-
 .portfolio_image_half {
+
   @media(max-width: 500px) {
     width: 47%;
   }

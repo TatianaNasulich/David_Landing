@@ -1,0 +1,145 @@
+.footer{
+  .container{
+    padding: 5.925% 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1620px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1000px) {
+     display: block;
+      padding: 4% 0;
+    }
+
+
+    @media (max-width: 1620px) {
+
+    }
+  }
+}
+.footer_info{
+  display:block;
+  text-align: left;
+  width: 38%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    text-align: center;
+
+  }
+
+}
+.footer_logo{
+  display: flex;
+  align-items: center;
+  padding-bottom: 4.878%;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+
+  }
+}
+.footer_logo_image{
+  width: 11.38%;
+  height: auto;
+
+  @media (max-width: 1000px) {
+    width:7%;
+  }
+}
+.footer_logo_picture{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.footer_logo_title{
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (26 - 18) + 18px);
+  font-family: Poppins-SemiBold;
+  margin-left: 2.47%;
+
+}
+.footer_info_text{
+  font-size:calc( (100vw - 320px)/(1920 - 320) * (14 - 10) + 10px);
+  font-family: Poppins-Light;
+  color: #858a8c;
+}
+
+.footer_subscribe{
+  width: 32%;
+  text-align: left;
+
+  @media (max-width: 1440px) {
+    width: 40%;
+
+    }
+
+  @media (max-width: 1000px) {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+  }
+
+}
+.footer_subscribe_title{
+  font-family: Poppins-SemiBold;
+  font-size: 14px;
+  padding-bottom: 1.33%;
+  line-height: 70px;
+
+  @media (max-width: 1000px) {
+    padding-bottom: 0;
+  }
+
+
+}
+.footer_subscribe_form{
+  position: relative;
+
+}
+.footer_form_input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  outline:none;
+  padding: 4.76% 4.76% 4.76% 0;
+  box-sizing: border-box;
+  font-size:14px;
+
+
+  @media (max-width: 1000px) {
+    text-align: center;
+    padding: 2% 2% 2% 0;
+
+  }
+
+}
+.footer_form_submit{
+  background: url("../images/arrows.png")0 0 no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 16px;
+  display: block;
+  border: none;
+  position: absolute;
+  right:0;
+  top:50%;
+  margin-top: -8px;
+  padding: 0;
+  outline:none;
+
+
+  @media (max-width: 600px) {
+    width: 13px;
+    height: 12px;
+
+  }
+}
+
+
+
