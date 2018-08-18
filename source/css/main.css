@@ -2767,6 +2767,9 @@ button {
 a {
   text-decoration: none; }
 
+.is-hidden {
+  display: none !important; }
+
 .hero {
   background: url(../images/creative-header-slide-1.jpg) no-repeat;
   color: #ffffff;
@@ -2832,7 +2835,8 @@ a {
   max-width: 40px;
   max-height: 30px;
   font-size: 200%;
-  color: #ffffff; }
+  color: #ffffff;
+  cursor: pointer; }
   @media (max-width: 1440px) {
     .hero_menu {
       top: 40px;
@@ -2852,8 +2856,7 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(41, 43, 50, 0.9);
-  display: none; }
+  background: rgba(41, 43, 50, 0.9); }
   .hero_nav_list {
     margin: auto;
     padding-top: 10%; }

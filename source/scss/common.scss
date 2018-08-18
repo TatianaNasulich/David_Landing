@@ -30,8 +30,6 @@ button{
   &:active{
     background-color: rgb(116, 67, 255);
   }
-
-
 }
 .button_white{
   color:#ffffff;
@@ -55,5 +53,8 @@ button{
 }
 a{
   text-decoration: none;
+}
+.is-hidden{
+  display: none !important;
 
 }

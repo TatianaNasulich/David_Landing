@@ -21,6 +21,17 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
         notify: false // Отключаем уведомления
     });
 });
+         /*---Scripts---*/
+gulp.task('scripts', function() {
+    return gulp.src([
+        'sourse/js/script.js/',
+
+    ])
+        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
+        .pipe(uglify()) //Сжимаем JS файл
+        .pipe(gulp.dest('sourse/js')); // Выгружаем в папку app/js
+});
+
 
               /*----Watch----*/
 gulp.task('watch', ['browser-sync', 'sass' /*'scripts'*/], function() {
