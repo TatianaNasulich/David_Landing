@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -24,22 +24,22 @@
     <div class="hero_nav is-hidden">
         <ul class="hero_nav_list">
             <li class="hero_nav_item">
-                <a href="#" class="hero_nav_link">Home</a>
+                <a href="#" class="hero_nav_link" id="home">Home</a>
             </li>
             <li class="hero_nav_item">
-                <a href="#" class="hero_nav_link">About</a>
+                <a href="#Lets_make" class="hero_nav_link">About</a>
             </li>
             <li class="hero_nav_item">
-                <a href="#" class="hero_nav_link">Portfolio</a>
+                <a href="#portfolio" class="hero_nav_link">Portfolio</a>
             </li>
             <li class="hero_nav_item">
-                <a href="#" class="hero_nav_link" >Services</a>
+                <a href="#pricing_table" class="hero_nav_link" >Services</a>
             </li>
             <li class="hero_nav_item">
-                <a href="#" class="hero_nav_link">Blog</a>
+                <a href="#Keep_in_touch" class="hero_nav_link">Blog</a>
             </li>
             <li class="hero_nav_item">
-                <a href="#" class="hero_nav_link">Contact</a>
+                <a href="#contact_info" class="hero_nav_link">Contact</a>
             </li>
             <li class="hero_nav_item hero_nav_item_icon">
                 <a  class="hero_nav_link"><i class="fa fa-twitter hero_nav_icon" aria-hidden="true"></i></a>
@@ -56,70 +56,78 @@
 </div>
 
 
-<div class="Lets_make">
-    <ul class="Lets_make_list">
-        <li class="Lets_make_item">
-            <div class="Lets_make_text">
-                <div class="Lets_make_title">
-                    Let’s make your design great again
-                </div>
-                <div class="Lets_make_description">
-                    I build identities and experiences to elevate & empower organizations.
-                </div>
-                <a class="button button_black">Get in touch</a>
-            </div>
-            <div class="Lets_make_image">
-                <img src="images/Background.jpg" alt="" class="Lets_make_picture">
+<div class="Lets_make" id="Lets_make">
 
-                    <div class="image">
-                    <img src="images/Cesis Creative Logo copy.png" class="image_rotate">
-                    </div>
+    <div class="Lets_make_item">
+        <div class="Lets_make_text">
+            <div class="Lets_make_title">
+                Let’s make your design great again
+            </div>
+            <div class="Lets_make_description">
+                I build identities and experiences to elevate & empower organizations.
+            </div>
+            <a class="button button_black">Get in touch</a>
+        </div>
+        <div class="Lets_make_image">
+            <img src="images/Background.jpg" alt="" class="Lets_make_picture">
 
-                    <div class="rotate">
-                        reative
-                    </div>
-                <div class="Lets_make_image_decorative_square  square_1"></div>
-                <div class="Lets_make_image_decorative_square  square_2"></div>
-                <div class="Lets_make_image_decorative_gradient gradient_1"></div>
-                <div class="Lets_make_image_decorative_gradient gradient_2"></div>
+            <div class="image">
+                <img src="images/Cesis Creative Logo copy.png" class="image_rotate">
             </div>
-        </li>
-        <li class="Lets_make_item">
-            <div class="Lets_make_text">
-                <div class="Lets_make_title">
-                    Who I am?
-                </div>
-                <div class="Lets_make_description">
-                    I build identities and experiences to elevate & empower organizations.
-                </div>
-                <div class="Lets_make_description_text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                </div>
-                <a class="button button_black">about me</a>
-            </div>
-            <div class="Lets_make_image">
-                <video poster="images/Video.jpg" class="Lets_make_picture">
-                    <source src="" type="video/mp4">
-                </video>
 
-                <button class="play">
-                    <img src="images/media-24px-outline-1-button-play.png" class="video_decorative_picture">
-                </button>
-                <div class="video_text">video</div>
-                <div class="video_decorative_elem_purple"></div>
-                <div class="video_decorative_image">
-                    <img src="images/Elements.png" class="video_decorative_picture">
-                </div>
-                <div class="video_decorative_elem_empty"></div>
-                <div class="video_decorative_elem_gradient_1"></div>
-                <div class="video_decorative_elem_gradient_2"></div>
+            <div class="rotate">
+                reative
             </div>
-        </li>
-    </ul>
+            <div class="Lets_make_image_decorative_square  square_1"></div>
+            <div class="Lets_make_image_decorative_square  square_2"></div>
+            <div class="Lets_make_image_decorative_gradient gradient_1"></div>
+            <div class="Lets_make_image_decorative_gradient gradient_2"></div>
+        </div>
+    </div>
+
+    <div class="Lets_make_video_wrapper clearfix">
+        <div class="video_wrapper clearfix">
+        <video poster="images/Video.jpg" class="Lets_make_video" id="video">
+            <source src="video/mov_bbb.mp4" type="video/mp4">
+            <source src="" type="video/ogg">
+        </video>
+
+            <button class="play">
+                <img src="images/media-24px-outline-1-button-play.png" class="video_decorative_picture" id="play">
+            </button>
+            <div class="video_decorative_elem video_text">video</div>
+            <div class="video_decorative_elem video_decorative_elem_purple"></div>
+            <div class="video_decorative_elem video_decorative_image">
+                <img src="images/Elements.png" class="video_decorative_picture">
+            </div>
+            <div class="video_decorative_elem video_decorative_elem_empty"></div>
+            <div class="video_decorative_elem video_decorative_elem_gradient_1"></div>
+            <div class=" video_decorative_elem video_decorative_elem_gradient_2"></div>
+        </div>
+
+            <div class="Lets_make_video_text">
+            <div class="Lets_make_title"> Who I am?</div>
+            <div class="Lets_make_description">
+                I build identities and experiences to elevate & empower organizations.
+            </div>
+            <div class="Lets_make_description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor.Reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo
+            </div>
+            <a class="button button_black">about me</a>
+        </div>
+
+    </div>
 
 </div>
 
-<section class="portfolio">
+
+<section class="portfolio" id="portfolio">
     <div class="container">
         <div class="portfolio_nav">
     <ul class="portfolio_list">
@@ -159,9 +167,7 @@
             </a>
         </li>
     </ul>
-            <div class="portfolio_icon">
-               <a> <i class="fa fa-bars" aria-hidden="true"></i></a>
-            </div>
+
         </div>
         <div class="portfolio_images">
 
@@ -224,7 +230,7 @@
 </section>
 
 
-<div class="pricing_table">
+<div class="pricing_table" id="pricing_table">
     <div class="container">
     <div class="pricing_table_title">Select your plans</div>
     <div class="pricing_table_description">Creating a website has never been this easy with Cesis Theme</div>
@@ -286,7 +292,7 @@
     </div>
 </div>
 
-<div class="Keep_in_touch">
+<div class="Keep_in_touch" id="Keep_in_touch">
     <div class="container">
         <div class="Keep_in_touch_wrapper">
             <div class="Keep_in_touch_text_block">
@@ -300,20 +306,20 @@
 
                     <label>
                        <i class="fa fa-user" aria-hidden="true"></i>
-                    <input  class="form_input" type="text" placeholder="Your name">
+                    <input  class="form_input" type="text" placeholder="Your name" data-valid="required" data-name >
                     </label>
 
                     <label>
                         <i class="fa fa-envelope form_input_icon" aria-hidden="true"></i>
-                    <input  class="form_input" type="email" placeholder="Email">
+                    <input  class="form_input"  placeholder="Email" data-valid="required" data-email>
                     </label>
                     <label>
                         <i class="fa fa-phone form_input_icon" aria-hidden="true"></i>
-                        <input  class="form_input" type="number" placeholder="Phone">
+                        <input  class="form_input"  placeholder="Phone" data-valid="required" data-number>
                     </label>
                     <label>
                         <i class="fa fa-building form_input_icon" aria-hidden="true"></i>
-                    <input  class="form_input" type="text" placeholder="Envato Market">
+                    <input  class="form_input" type="text" placeholder="Envato Market" data-valid="required" data-name>
                     </label>
 
                     <label>
@@ -321,17 +327,17 @@
                     <input  class="form_input"  placeholder="What are you looking for?" disabled>
                     </label>
 
-                    <label class="form_input_label"><input  class="form_input_checkbox" type="checkbox"><span class="form_input_checkbox_span"></span>Envato Market</label>
-                    <label class="form_input_label"><input  class="form_input_checkbox" type="checkbox" value="What are you looking for?"><span class="form_input_checkbox_span"></span>What are you looking for?</label>
+                    <label class="form_input_label"><input  class="form_input_checkbox" type="checkbox" value="Envato Market" data-valid="required"><span class="form_input_checkbox_span"></span>Envato Market</label>
+                    <label class="form_input_label"><input  class="form_input_checkbox" type="checkbox" value="What are you looking for?" data-valid="required"><span class="form_input_checkbox_span"></span>What are you looking for?</label>
 
 
-                    <button type="submit" class="button button_black"> Keep in touch</button>
+                    <button type="submit" class="button button_black " id="submit"> Keep in touch</button>
 
                 </form>
             </div>
         </div>
 
-        <div class="contact_info">
+        <div class="contact_info" id="contact_info">
             <ul class="contact_info_list">
                 <li class="contact_info_item">
                     <div class="contact_info_item_title">Postal Address</div>
@@ -393,6 +399,7 @@
     </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/libs.min.js"></script>
+
 </body>
 </html>

@@ -16,7 +16,8 @@
     display: block;
 
     @media(max-width:690px){
-      display: none;
+
+
     }
 
     &:after{
@@ -32,20 +33,21 @@
   &_item{
     display: inline-block;
     font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 14) + 14px);
-    line-height: 100px;
+    line-height: 5.5;
     font-family:MyriadPro-Regular ;
 
-    @media(max-width:1000px){
-      line-height: 60px;
+
+
+    @media(max-width:690px){
+      width: 32%;
+      text-align: center;
+
+      line-height: 2;
+
     }
   }
 
-  &_icon{
-    display: none;
-    @media(max-width:690px){
-      display: block;
-    }
-  }
+
 
   &_link{
     color: black;

@@ -57,7 +57,12 @@
   &_icon{
     color: white;
     font-size: calc( (100vw - 320px)/(1920 - 320) * (30 - 20) + 20px);
+    padding: 20px;
   }
+}
+.social_item_link{
+  box-sizing: border-box;
+  padding: 20px;
 }
 .social_item_link:hover + .social_item_tooltip{
  opacity: 1;

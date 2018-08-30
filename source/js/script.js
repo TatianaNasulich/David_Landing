@@ -3,12 +3,18 @@
    var nav = document.querySelector(".hero_nav");
    var openNavIcon = document.querySelector(".hero_menu");
    var closeNavIcon = null;
+   var closeDefault = document.getElementById("home");
+
 
    if(openNavIcon){
        openNavIcon.addEventListener('click',function () {
            open();
        });
 
+   }
+
+   if(closeDefault) {
+       closeDefault.addEventListener('click',onClose) ;
    }
 
    function onClose(e) {
